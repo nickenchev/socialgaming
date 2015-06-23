@@ -31,3 +31,13 @@ SocialGamingManager::sharedInstance().setProvider(unique_ptr<GameCenterProvide>(
 //tell the manager which presenter (view controller) it should use
 SocialGamingManager::sharedInstance().setPresenter(self.viewController);
 ```
+
+##C++ Instructions
+Include the following
+
+ * #include "SocialGamingManager.h"
+
+Call methods on the SocialGamingManager like this:
+```cpp
+SocialGamingManager::sharedInstance().showLeaderboard();
+```
