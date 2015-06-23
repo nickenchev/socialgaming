@@ -33,6 +33,7 @@ public:
     
     void authenticate() { provider->authenticate(presenter); }
     void reportScore(double score) { provider->reportScore(score, presenter); }
+    void showLeaderboard() { provider->showLeaderboard(presenter); }
 };
 
 #endif /* defined(__triptych__SocialGamingManager__) */

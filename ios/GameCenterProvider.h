@@ -16,6 +16,7 @@ class GameCenterProvider : public SocialGamingProvider
 public:
     void authenticate(void *presenter);
     void reportScore(double score, void *presenter);
+    void showLeaderboard(void *presenter);
 };
 
 #endif /* defined(__triptych__SocialGamingGameCenter__) */

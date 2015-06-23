@@ -25,3 +25,11 @@ void GameCenterProvider::reportScore(double score, void *presenter)
         [gameCenter reportScore:score andViewController:(UIViewController *)presenter];
     });
 }
+
+void GameCenterProvider::showLeaderboard(void *presenter)
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        SocialGamingGameCenter *gameCenter = [SocialGamingGameCenter sharedInstance];
+        [gameCenter showLeaderboard:(UIViewController *)presenter];
+    });
+}

@@ -16,6 +16,7 @@ class SocialGamingProvider
 public:
     virtual void authenticate(void *presenter) = 0;
     virtual void reportScore(double score, void *presenter) = 0;
+    virtual void showLeaderboard(void *presenter) = 0;
 };
 
 #endif /* defined(__triptych__SocialGamingProvider__) */

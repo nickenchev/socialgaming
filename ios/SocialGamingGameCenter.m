@@ -9,12 +9,6 @@
 #import <GameKit/GameKit.h>
 #import "SocialGamingGameCenter.h"
 
-@interface SocialGamingGameCenter()
-
-@property (nonatomic, weak) UIViewController *viewController;
-
-@end
-
 @implementation SocialGamingGameCenter
 
 + (id)sharedInstance
@@ -36,7 +30,7 @@
         {
             if (viewController)
             {
-                [self.viewController presentViewController:viewController animated:YES completion:nil];
+                [viewController presentViewController:viewController animated:YES completion:nil];
             }
             else
             {
@@ -73,7 +67,7 @@
         gcController.viewState = GKGameCenterViewControllerStateLeaderboards;
         gcController.leaderboardIdentifier = self.defaultLeaderboard;
         
-        [self.viewController presentViewController:gcController animated:YES completion:nil];
+        [viewController presentViewController:gcController animated:YES completion:nil];
     }
 }
 
@@ -86,7 +80,7 @@
         gcController.viewState = GKGameCenterViewControllerStateAchievements;
         gcController.leaderboardIdentifier = self.defaultLeaderboard;
         
-        [self.viewController presentViewController:gcController animated:YES completion:nil];
+        [viewController presentViewController:gcController animated:YES completion:nil];
     }
 }
 
