@@ -27,7 +27,7 @@ Provide the following imports into AppDelegate or AppController (cocos2d-x)
 Add these lines somewhere in your didFinishLaunchingWithOptions
 ```cpp
 //make sure the manager is using the correct provider
-SocialGamingManager::sharedInstance().setProvider(unique_ptr<GameCenterProvide>(new GameCenterProvider));
+SocialGamingManager::sharedInstance().setProvider(unique_ptr<GameCenterProvider>(new GameCenterProvider));
 //tell the manager which presenter (view controller) it should use
 SocialGamingManager::sharedInstance().setPresenter(self.viewController);
 ```
