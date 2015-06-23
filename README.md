@@ -33,11 +33,22 @@ SocialGamingManager::sharedInstance().setPresenter(self.viewController);
 ```
 
 ##C++ Instructions
-Include the following
+Include the following:
+```cpp
+ #include "SocialGamingManager.h"
+ ```
 
- * #include "SocialGamingManager.h"
+Authenticate the player:
+```cpp
+SocialGamingManager::sharedInstance().authenticate();
+```
 
-Call methods on the SocialGamingManager like this:
+Report the player's score
+```cpp
+SocialGamingManager::sharedInstance().reportScore(highScore);
+```
+
+Show the player's default leaderboard
 ```cpp
 SocialGamingManager::sharedInstance().showLeaderboard();
 ```
