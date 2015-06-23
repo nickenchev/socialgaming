@@ -24,7 +24,8 @@ SocialGaming is a small framework that allows native iOS/Android games developed
 
  4. Add these lines somewhere in your didFinishLaunchingWithOptions
 ```cpp
-//make sure the manager is using the correct provider SocialGamingManager::sharedInstance().setProvider(unique_ptr<GameCenterProvide>(new GameCenterProvider));
+//make sure the manager is using the correct provider
+SocialGamingManager::sharedInstance().setProvider(unique_ptr<GameCenterProvide>(new GameCenterProvider));
 //tell the manager which presenter (view controller) it should use
 SocialGamingManager::sharedInstance().setPresenter(self.viewController);
 ```
