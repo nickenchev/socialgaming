@@ -5,15 +5,15 @@ SocialGaming is a small framework that allows native iOS/Android games developed
 ## iOS Instructions
 
  1. Include the following files into your iOS project:
- * ios/GameCenterProvider.h
- * ios/GameCenterProvider.mm
- * ios/SocialGamingGameCenter.h
- * ios/SocialGamingGameCenter.m
+ 	* ios/GameCenterProvider.h
+ 	* ios/GameCenterProvider.mm
+ 	* ios/SocialGamingGameCenter.h
+ 	* ios/SocialGamingGameCenter.m
 
  2. Add these files to your C++ project
- * cpp/SocialGamingManager.cpp
- * cpp/SocialGamingManager.h
- * cpp/SocialGamingProvider.h
+ 	* cpp/SocialGamingManager.cpp
+ 	* cpp/SocialGamingManager.h
+ 	* cpp/SocialGamingProvider.h
 
  3. Provide the following imports into AppDelegate or AppController (cocos2d-x)
 
